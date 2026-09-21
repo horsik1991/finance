@@ -1,0 +1,26 @@
+block variables
+
+doctype html
+html.page(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		link(href="https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800&display=swap&subset=cyrillic-ext" rel="stylesheet")
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="keywords" content="")
+		link(rel="stylesheet" type='text/css' href="static/css/styles.min.css")
+
+
+
+	body
+		.wrapper
+			include ../../blocks/common/header/header
+			main.main
+				block content
+			include ../../blocks/common/footer/footer
+
+		//script(src="static/js/vendor/jquery-3.3.1.min.js")
+		//script(src="static/js/vendor/libs.js")
+		script(src="/static/js/app.min.js" type="module")
+		block script

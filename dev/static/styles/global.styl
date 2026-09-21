@@ -1,0 +1,116 @@
+// @import './instruments/1vars.styl'
+
+[class*="__container"]
+	max-width 1049px
+	padding 0 15px
+	margin 0 auto
+._ibg
+	img
+		position absolute
+		left 0
+		top 0
+		width 100%
+		height 100%
+		object-fit: cover
+
+body 
+	height 100%
+	// Скролл заблокирован
+	.lock & 
+		overflow hidden
+		touch-action none
+
+// // Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
+.wrapper 
+	min-height 100%
+	display flex
+	flex-direction column
+	overflow hidden
+	font-family $mainFont
+	box-sizing: border-box
+	font-weight $font-weight
+	font-size $fontSize
+	// Прижимаем footer
+.main 
+	flex 1 1 auto
+	// Фикс для слайдеров
+	> * 
+		min-width 0
+	
+// // Ограничивающий контейнер ======================================================================================================================================================================================================================
+
+// (i) Стили будут применяться ко 
+// всем классам содержащим *__container
+// Например header__container, main__container и т.д.
+// Снипет (HTML): cnt
+
+
+// if $responsiveType==1
+// 	[class*="__container"]
+// 		if $maxWidthContainer>0 
+// 			max-width rem($maxWidthContainer)
+// 			box-sizing content-box
+// 			margin 0 auto
+// 		if $containerPadding>0
+// 			padding 0 rem(div($containerPadding, 2))
+// 		if $maxWidthContainer>0 
+// 			max-width rem($maxWidthContainer)
+// 			box-sizing content-box
+// 		else 
+// 			if $containerPadding>0 
+// 				padding 0 rem(div($containerPadding, 2))
+// 		@media (max-width $pc) 
+// 			max-width: rem(970)
+// 		@media (max-width $tablet) 
+// 			max-width: rem(750)
+// 		@media (max-width $mobile) 
+// 			max-width: none
+// 			if ($containerPadding>0 and $maxWidthContainer>0)
+// 				padding 0 rem(div($containerPadding, 2))
+
+
+
+
+
+
+
+// Общий файл элементов форм
+// Для подключения/отключения стилей конкретного єлемента формы смотри base/forms/forms.scss
+//@import "instruments/forms/forms";
+
+// Стили попапов
+// @import "instruments/popup";
+
+// Стили спойлеров
+// @import "instruments/spollers";
+
+// Стили табов
+// @import "instruments/tabs";
+
+// Стили карт
+// @import "instruments/maps";
+
+// Стили блока "показать еще"
+// @import "instruments/showmore";
+
+// Стили для полноэкранного блока
+// @import "instruments/fullscreen";
+
+// Стили для липкого блока
+// @import "instruments/sticky";
+
+// Стили для отзывчивых картинок (IBG)
+// Сниппет (HTML): ibg (div c картинкой и классами)
+// Сниппет (HTML): ibga (a c картинкой и классами)
+// [class*="-ibg"]
+// 	position relative
+// 	img
+// 		position absolute
+// 		width 100%
+// 		height 100%
+// 		top 0
+// 		left 0
+// 		object-fit cover
+// [class*="-ibg_contain"]
+// 	img 
+// 		object-fit contain

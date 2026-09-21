@@ -1,0 +1,19 @@
+mixin advItem(svg,number,description)
+	li.advantages__item
+		.advantages__icon 
+			img(src=svg)
+		p.advantages__number=number 
+		p.advantages__description=description
+section.advantages
+	.advantages__container
+		.title
+			h3.title__heading Designing Better Experience
+			p.title__description Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics 
+		ul.advantages__list 
+			+advItem('@img/icons/advantages/4.svg', '972 +','Consumer Products')
+			+advItem('@img/icons/advantages/3.svg', '181 +','Financial Services')
+			+advItem('@img/icons/advantages/2.svg', '98%','Environmental')
+			+advItem('@img/icons/advantages/1.svg', '746 +','Business & Finance')
+
+
+

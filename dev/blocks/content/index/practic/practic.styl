@@ -1,0 +1,27 @@
+.practic
+	background-color #fafafa
+	padding-top 125px
+	&__list
+		display grid
+		grid-template-columns: repeat(4, 1fr)
+		gap 33px
+		margin-top 45px
+		@media(max-width 640px)
+			grid-template-columns: repeat(2,1fr)
+			gap 20px
+	&__item
+		background-color #fff
+		display: grid;
+		grid-row: span 3;
+		grid-template-rows: subgrid;
+	&__title
+		font-weight bold
+		font-size 16px
+		line-height 24px
+		color $mainBlack
+	&__description
+		font-size 14px
+		line-height 20px
+		color $secondText
+	&__inner-wrap
+		padding 30px

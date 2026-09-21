@@ -1,0 +1,33 @@
+.advantages
+	background-color #fafafa
+	padding-top 80px
+	&__list
+		display grid
+		width 100%
+		gap 10px
+		margin-top 50px
+		grid-template-columns: repeat(4,1fr)
+		@media(max-width 640px)
+			grid-template-columns: repeat(2,1fr)
+		
+	&__item
+		background-color #fff
+		padding 10px
+		display: grid;
+		grid-row: span 3;
+		grid-template-rows: subgrid;
+		gap 10px
+		text-align center
+	&__icon
+		color $secondColor
+		transition: linear 0.3s color
+		&:hover
+			color darken($secondColor,30%)
+	&__number
+		font-size 40px
+		line-height 57px
+		font-weight bold
+		color $mainBlack
+		@media(max-width 370px)
+			font-size 36px
+			line-height 40px

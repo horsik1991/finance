@@ -1,0 +1,18 @@
+mixin practicItem(title,description,img)
+	li.practic__item
+		.practic__inner-wrap
+			h4.practic__title=title
+			p.practic__description=description
+		.practic__img
+			img(src=img alt=description width="230" height="138")
+section.practic 
+	.practic__container
+		.title
+			h3.title__heading Practice Advice
+			p.title__description Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics 
+		ul.practic__list 
+			+practicItem('A single source of truth','Newton thought that light was made up of particles, but then it was discovered ','@img/practic/1.jpg')
+			+practicItem('Fastest way to organize','“Quantum mechanics” is the description of the behaviour of matter','@img/practic/2.jpg')
+			+practicItem('Fastest way to take action','They describe a universe consisting of bodies moving','@img/practic/3.jpg')
+			+practicItem('Work better together','They finally obtained a consistent description of the behaviour ','@img/practic/4.jpg')
+	

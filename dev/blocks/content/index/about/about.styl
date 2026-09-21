@@ -1,0 +1,53 @@
+.about
+	&__inner-wrap
+		display flex
+		column-gap 122px
+		width 100%
+		margin-top 100px
+		>*
+			flex 1 1 50%
+	&__video
+		background: rgb(129, 129, 129)url('../img/about/bg1.jpg') no-repeat center / cover
+	&__list
+		display: flex
+		flex-direction: column
+		row-gap: 30px
+	&__item
+		display flex
+		row-gap 30px
+		.title
+			margin-left 22px
+			display grid
+			gap 5px
+			&__heading
+				font-size 16px
+				line-height 24px
+			&__description
+				font-size 14px
+				line-height 20px
+				margin-top 5px
+	&__icon
+		color $primeColor
+.video
+	&__btn-wrap
+		display flex
+		align-items center
+		justify-content center
+		height 100%
+	&__bg
+		background-color $secondColor
+		border-radius 50%
+		width: 98px
+		height: 98px
+		display flex
+		align-items center
+		justify-content center
+		transition linear 0.1s transform
+		&:hover
+			cursor pointer
+			transform scale(110%)
+	&__triangle
+		background-color #fff
+		width: 30px
+		height: 30px
+		clip-path: polygon(0 0, 100% 50%, 0 100%)	

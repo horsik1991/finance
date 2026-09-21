@@ -1,0 +1,80 @@
+.hero
+	font-weight 500
+	position relative
+	&__container
+		position relative
+		z-index 2
+	&__inner-wrap
+		max-width: 400px
+		z-index 2
+		padding 184px 0 191px 0
+		& > *
+			&:not(:last-child)
+				margin 35px 0
+		@media(max-width 850px)
+			padding 100px 0 191px 0
+		@media(max-width 600px)
+			padding 70px 0 191px 0
+		@media(max-width 400px)
+			padding 30px 0 191px 0
+	&__title
+		font-size 50px
+		line-height (80/50*100%)
+		color $mainBlack
+		font-weight 800
+		letter-spacing 0.2px
+		@media(max-width 400px)
+			font-size: 36px
+	&__description
+		font-size 20px
+		line-height (30/20*100%)
+		color $secondText
+		@media(max-width 400px)
+			font-size: 18px
+			color darken($secondText,40%)
+	&__buttons
+		display inline-flex
+		flex-wrap wrap
+		@media(max-width: 410px)
+			gap 10px
+			width 100%
+	&__button
+		display flex
+		align-items center
+		justify-content center	
+		border 2px solid $secondColor
+		border-radius 37px
+		color $secondColor
+		padding 5px 36px
+		min-height: 48px
+		text-align center
+		letter-spacing 0.2px
+		line-height 200%
+		&:last-child
+			margin-left 10px
+			@media(max-width 410px)
+				margin-left 0
+		&--orange
+			background-color $primeColor
+			border 2px solid $primeColor
+			color #fff
+		@media(max-width 600px)
+			padding 5px 26px
+			font-size: 16px
+		@media(max-width 410px)
+			padding 5px 15px
+			font-size: 14px
+			flex 1 1 auto
+			width 100%
+	&__img
+		position: absolute
+		width: 100%
+		height 100%
+		top 0
+		left 0
+		img
+			@media (max-width 1300px) 
+				object-position: right
+			@media (max-width 882px)
+				opacity: 0.5
+
