@@ -1,6 +1,36 @@
+button
+	outline none
+	border none
 .subscribe
-	margin-top 87px
+	margin-top 30px
 	background-color $mainBlack
 	min-height: 77px
-	&__sub-form
-		background-color #17213C
+	position relative
+	&__container
+		display flex
+		justify-content center
+		align-items center
+.sub-form
+	display flex
+	background-color #17213C
+	position absolute
+	margin 0 32px
+	padding 30px 50px
+	justify-content space-between
+	&__title
+		flex-basis: 50%
+		color #fff
+	&__submit
+		padding 5px 10px
+		background-color $primeColor
+		color: #fff
+		border-radius 0 5px 5px 0
+	&__input-wrap
+		display flex
+		flex-basis:60%
+	&__input
+		padding-left 20px
+		border-radius 5px 0 0 5px
+		border none
+		outline none
+		flex 1 0 auto
