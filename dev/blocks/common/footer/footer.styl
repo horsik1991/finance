@@ -1,5 +1,44 @@
 .footer
 	background-color $mainBlack
 	color: #fff
+	a
+		display block
+	&__bottom
+		width 100%
+		background-color #fff
+		color #737373
+		padding 25px 0
+	&__inner-wrap
+		display flex
+		justify-content space-between
+	&__socials
+		display flex
+		column-gap 20px
+	&__social
+		width 20px
+		height 20px
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		&--tw
+			background-image: url('@img/icons/socials/tw.svg')
+		&--yt
+			background-image: url('@img/icons/socials/yt.svg')
+		&--inst
+			background-image: url('@img/icons/socials/inst.svg')
+		&--fb
+			background-image: url('@img/icons/socials/fb.svg')
 .footer-menu
+	padding 50px 0
 	display grid
+	column-gap 30px
+	grid-template-columns: repeat(5, minmax(150px,max-content));
+	&__item
+		display grid
+		grid-template-rows subgrid
+		grid-row span 5
+		row-gap:10px
+	&__title
+		margin-bottom 10px
+	&__link
+		font-size 14px
